@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<head>
+  <link href="normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('soccer field.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    .headerImg {
+      	width: 250px;
+      	height: 250px;
+      }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
 
+      li {
+        padding: 5px;
+        display: block;
+      }
+      .headerImg {
+      	width: 0;
+      	height: 0;
+      	border: 0;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="headerImg" src="football.jpg">
+    <h1>Ahmed's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">world cup</a></li>
+      <li><a href="#">messi is the best</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>messi is the best football player</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi risus dolor, ultricies ut posuere a, cursus id arcu. Vivamus quis quam ultricies, imperdiet odio ut, semper sapien. Nullam commodo lorem eu urna commodo, dictum fermentum velit elementum. Ut aliquet, diam id facilisis fringilla, est felis tincidunt dolor, a semper mi sem ac ligula. Maecenas congue auctor feugiat. Vestibulum pellentesque magna vitae magna aliquam, quis tempor mauris scelerisque. Nulla mi libero, porta eu varius quis, fermentum vel nisl.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>freekicks</h2>
+    <p>Pellentesque accumsan dignissim mauris, nec consectetur nibh laoreet vitae. Pellentesque et leo odio. Praesent tempus eros et tellus auctor mollis. Mauris tortor neque, ultrices non libero eu, sodales commodo eros. Phasellus sagittis fermentum porttitor. Proin quis velit ex. Mauris ut dui feugiat, bibendum tortor eu, elementum ante. Suspendisse consectetur condimentum eros a posuere. Etiam nisi nisi, mattis a risus id, tincidunt efficitur massa. Suspendisse sit amet elementum erat.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>best food</h2>
+    <p>Nam bibendum, augue vel tempus hendrerit, arcu quam fermentum sapien, id tempus odio turpis et orci. Proin nec est bibendum orci ullamcorper iaculis. Nullam ac placerat arcu. Donec sit amet lacinia metus. Ut vitae nulla mollis, finibus leo nec, mollis ligula. Nam eget facilisis ante. Nullam nec auctor massa, non tristique nibh. Nullam nisi est, suscipit vitae ligula at, facilisis fermentum risus. Integer imperdiet diam id velit porta scelerisque. Morbi libero nunc, posuere non condimentum non, viverra id ligula. Sed orci nulla, porttitor sit amet tempor quis, facilisis sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent fermentum accumsan faucibus. Ut sit amet pretium mauris.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
